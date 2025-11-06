@@ -2,14 +2,8 @@
 public class Cheers {
     public static void main(String[] args) {
         
-        // מומלץ: בדיקת קלט כדי למנוע קריסה
-        if (args.length != 2) {
-            System.out.println("Usage: java Cheers <WORD> <COUNT>");
-            return;
-        }
-        
         String cheer = args[0];
-        String upperCheer = cheer.toUpperCase(); // הופך את כל האותיות לגדולות
+        String uppercheer = cheer.toUpperCase(); // הופך את כל האותיות לגדולות
         int reps = Integer.parseInt(args[1]);
         int length = cheer.length(); // אורך המילה
         
@@ -18,7 +12,7 @@ public class Cheers {
         
         for (int i = 0; i < length; i++) // רץ על כל אות
         {
-            char letter = upperCheer.charAt(i); // בוחן אות ספציפית
+            char letter = uppercheer.charAt(i); // בוחן אות ספציפית
                         // אם האות נמצאת במחרוזת (כלומר, האינדקס שלה הוא 0 ומעלה)
             if (AN_LETTERS.indexOf(letter) >= 0) 
             {
